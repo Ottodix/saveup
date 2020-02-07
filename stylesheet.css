@@ -63,7 +63,7 @@ h3 {
 	border: 2px solid #fff;	
 	border-radius:50px;	
 }
-.scrolled .btn-download-top a {
+.scrolled .btn-download-top a,.navbar-collapse.collapse.in .btn-download-top a,.navbar-collapse.collapsing .btn-download-top a {
 	background: rgb(168,215,0);
 	background: linear-gradient(90deg, rgba(168,215,0,1) 0%, rgba(148,190,0,1) 100%);
 	border:2px solid rgba(168,215,0,1);
@@ -91,6 +91,20 @@ h3 {
 	background-repeat: no-repeat, repeat-x;	
 	background-size: auto 100%, auto 100%;	
 	color: #fff;
+}
+#top-section > .container{
+	padding: 0 30px;
+}
+#top-section h1{
+	font-size:46px;
+	margin-bottom: 40px;
+}
+#top-section .top_desc{
+    margin-bottom: 100px;
+    padding-left: 0;	
+}
+#top-section .top_screen{
+    margin-top: 90px;
 }
 .scroll-incitative {
 	margin:10px 0 0 10px;
@@ -303,6 +317,15 @@ h3 {
 		width: 100%;
 		margin-top:40px
 	}		
+	#top-section h1 {
+		font-size: 36px;	
+	}	
+	#top-section .top_desc {
+		margin-bottom: 0px;	
+	}
+	#top-section .top_screen {
+		margin-top: 0px;	
+	}	
 	.sub-section {
 		margin : 30px 0;
 	}
