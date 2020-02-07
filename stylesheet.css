@@ -1,0 +1,347 @@
+body {
+	font-family: Segoe UI;	
+}
+h1,h2,h3{
+	font-family: "Gotham Pro Medium", Segoe UI;	
+	letter-spacing:3px;
+}
+h2 {
+	font-size:34px;
+}
+h3 {
+	font-size:24px;
+}
+.navbar-fixed-top.scrolled {
+  background-color: #19161D !important;
+  transition: background-color 200ms linear;
+}
+.nav>li>a {
+	color:#fff;
+	transition: background-color 200ms linear;	
+	padding: 20px 15px;
+	font-size:17px;
+	
+}
+.nav>li>a:focus, .nav>li>a:hover {
+	background: #000;
+}
+.navbar-toggle {
+    margin-top: 13px;
+}
+.navbar-toggle .icon-bar {
+	background: #fff;
+}
+.btn {
+	border-radius:50px;		
+	background: rgb(168,215,0);
+	background: linear-gradient(90deg, rgba(168,215,0,1) 0%, rgba(148,190,0,1) 100%);
+	font-family: "Gotham Pro", Segoe UI;	
+	padding: 10px 25px;
+	font-size:16px;	
+	transition: all 200ms linear;	
+	margin-bottom: 25px;
+}
+.btn:hover {
+	background: linear-gradient(90deg, #b0df0a 0%, #b0df0a 100%);	
+	color:#fff;
+    transform: scale(1.10);	
+}
+
+.icon-download {
+	background: url(img/icon-download.svg) no-repeat 0 100%;
+    background-size: auto 100%;	
+	padding-left:35px;
+
+}
+.btn-download-top {
+	margin-right:25px;
+	font-family: "Gotham Pro", Segoe UI;
+}
+.btn-download-top a {
+	padding: 5px 15px !important;
+	margin: 13px  10px;
+	border: 2px solid #fff;	
+	border-radius:50px;	
+}
+.scrolled .btn-download-top a {
+	background: rgb(168,215,0);
+	background: linear-gradient(90deg, rgba(168,215,0,1) 0%, rgba(148,190,0,1) 100%);
+	border:2px solid rgba(168,215,0,1);
+}
+.main-logo {
+	background-image: url(img/logo.svg);
+    background-size: auto 100%;
+    background-position: center left;
+    background-repeat: no-repeat;
+    padding: 0 0 0 50px;
+    margin: 15px;
+    height: auto;
+	font-family: "Gotham Pro medium", Segoe UI;
+	font-size:35px;
+	line-height:30px;
+	text-transform: uppercase;	
+	letter-spacing:2px;
+    color: #fff !important;
+}
+
+#top-section {
+	padding-top:120px;
+	background-image: url(img/top_img_small.png), url(img/top_grad_small.png);
+	background-position: right bottom, 0 0;
+	background-repeat: no-repeat, repeat-x;	
+	background-size: auto 100%, auto 100%;	
+	color: #fff;
+}
+.scroll-incitative {
+	margin:10px 0 0 10px;
+}
+.scroll-incitative p{
+	padding-top:6px;
+	font-size:16px;
+}
+.animation{
+	position: relative;
+}
+.icon {
+	float:left;
+	margin-right:34px;
+	border: 2px solid #fff;	
+	border-radius:50px;	
+	width:28px;
+	height:38px;
+	position:relative;
+}
+.cursor {
+	background:#fff;
+	width:5px; height:8px;
+	display:inline-block;
+	margin-top:2px;
+	border-radius:100%;
+    left: 9px;
+    top: 5px;
+	position: absolute;	
+	animation: upAndDown 1s infinite ease-in-out;
+}
+.anim1 .disk {
+	position:absolute;
+	width:70px;
+	height:70px;
+	top:-15px;left:-20px;
+	background:rgba(255,255,255,0.1);
+	border-radius:100%;
+	transform-origin: 52% 52%; 
+	animation: diskEnlarge 2s infinite linear; 
+}
+.anim1 .disk2 {
+	position:absolute;
+	width:50px;
+	height:50px;
+	top:-5px;left:-10px;
+	background:rgba(255,255,255,0.1);
+	border-radius:100%;
+	transform-origin: 52% 52%; 
+	animation: diskEnlarge2 2s infinite linear; 
+}
+@keyframes diskEnlarge { 
+	0% { transform: scale(1); } 
+	50% { transform: scale(1.4); } 
+	100% { transform: scale(1); } 
+}
+@keyframes diskEnlarge2 { 
+	0% { transform: scale(1); } 
+	50% { transform: scale(1.2); } 
+	100% { transform: scale(1); } 
+}
+.anim2 .disk {
+	position:absolute;
+	width:70px;
+	height:70px;
+	top:-15px;left:-20px;
+	border:1px solid rgba(255,255,255,0.8);
+	border-radius:100%;
+	transform-origin: 52% 52%; 
+	animation: circle 2s infinite linear; 
+}
+.anim2 .disk2 {
+	position:absolute;
+	width:70px;
+	height:70px;
+	top:-17px;left:-22px;
+	border:1px solid rgba(255,255,255,0.8);
+	border-radius:100%;
+	transform-origin: 48% 48%; 
+	animation: circle 2s infinite linear; 
+}
+@keyframes circle { 
+	to { transform: rotate(1turn); } 
+}
+
+@keyframes smoothMove {
+  0% {
+    top:-32px;left:-35px;
+  }
+  12% {
+    top:-31px;left:-36px;
+  }  
+  24% {
+    top:-30px;left:-37px;
+  }
+  36% {
+    top:-29px;left:-36px;
+  }  
+  48% {
+    top:-28px;left:-35px;  
+  }
+  60% {
+    top:-29px;left:-34px;  
+  }  
+  72% {
+    top:-30px;left:-33px;  
+  }    
+  84% {
+    top:-31px;left:-34px;  
+  }      
+  96% {
+    top:-32px;left:-35px;  
+  }        
+}
+@keyframes upAndDown {
+  0% {
+    top: 3px;
+  }
+  50% {
+    top: 10px;
+  }
+  100% {
+    top: 3px;	  
+  }
+}
+
+
+#functions{
+	background:#19161d;
+	color:#fff;	
+}
+#functions a {
+	color:#ec5e40;
+	font-style:italic;
+}
+.title{
+	text-align:center;
+    margin: 30px 0;	
+}
+.title h2{
+	display: inline-block;
+}
+.title p{
+	font-size:18px;
+	font-family: Segoe UI Light;	
+}
+.underscore::before,.underscore::after{
+	content: "";
+	display:inline-block;
+	width:15px;
+	height:2px;	
+}
+.underscore::before{
+	background:#ff6219;
+	margin-right:15px;
+}
+.underscore::after{
+	background:#a8d700;
+	margin-left:15px;
+}
+#top-section .lead{
+	font-size:17px;
+	margin-bottom:25px;
+	line-height: 25px;
+}
+.section3 .img{
+	transform: scale(1) !important;
+	transition: all 0.5s ease-in-out;
+}
+.section3:hover .img{
+	transform: scale(1.2) !important;
+}
+.sub-section .img{
+	max-height:400px;
+	overflow:hidden;
+	transform: scale(0.8);
+	transition: all 0.5s ease-in-out;
+}
+.sub-section:hover .img{
+	transform: scale(0.9);
+}
+.sub-section img{
+	max-width:100%;
+}
+.sub-section.image-right,.sub-section.image-left{
+    display: grid;
+    grid-column-gap: 4%;
+    grid-template-columns: 66% 30%;
+    align-items: center;
+    justify-items: center;	
+	font-size:16px;
+}
+.sub-section.image-left{
+    grid-template-columns: 30% 68%;
+}
+.sub-section.section3{
+	margin:50px 0;
+}
+@media screen and (max-width: 992px) {
+	.main-logo {
+		font-size: 20px;
+	}
+	.nav>li>a {
+		font-size:14px;
+	}	
+	#top-section {
+		padding-top:80px;
+	}	
+	#top-section img{
+		width: 100%;
+		margin-top:40px
+	}		
+	.sub-section {
+		margin : 30px 0;
+	}
+	h2 {
+		font-size:24px;
+	}
+	h3 {
+		font-size:14px;
+	}
+	.underscore::before,.underscore::after{
+		width:8px;
+		height:2px;	
+	}	
+	.underscore::before{
+		margin-right:10px;
+	}
+	.underscore::after{
+		margin-left:10px;
+	}	
+}
+@media screen and (max-width: 768px) {
+	.nav>li.btn-download-top>a {
+		width:100%
+	}	
+	.navbar-collapse.in,.navbar-collapse.collapsing {
+		overflow-y: auto;
+		background: #000;
+	}	
+	.navbar-fixed-top.opennav {
+	  background-color: #000 !important;
+	  transition: background-color 200ms linear;
+	}	
+}
+@media screen and (max-width: 468px) {
+	.btn {
+		font-size: 12px;
+	}	
+}
+/* TEMP CSS -------------------- */
+#filler {
+	height:3000px;
+}
