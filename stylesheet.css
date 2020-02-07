@@ -74,7 +74,7 @@ h3 {
     background-position: center left;
     background-repeat: no-repeat;
     padding: 0 0 0 50px;
-    margin: 15px;
+    margin: 25px;
     height: auto;
 	font-family: "Gotham Pro medium", Segoe UI;
 	font-size:35px;
@@ -82,8 +82,11 @@ h3 {
 	text-transform: uppercase;	
 	letter-spacing:2px;
     color: #fff !important;
+	transition:all 0.2s ease-in-out;
 }
-
+.navbar.scrolled .main-logo {
+    margin: 15px;	
+}
 #top-section {
 	padding-top:120px;
 	background-image: url(img/top_img_small.png), url(img/top_grad_small.png);
