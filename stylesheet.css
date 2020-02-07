@@ -138,6 +138,7 @@ h3 {
 }
 .anim1 .disk {
 	position:absolute;
+	z-index:1;	
 	width:70px;
 	height:70px;
 	top:-15px;left:-20px;
@@ -148,6 +149,7 @@ h3 {
 }
 .anim1 .disk2 {
 	position:absolute;
+	z-index:2;
 	width:50px;
 	height:50px;
 	top:-5px;left:-10px;
@@ -158,12 +160,12 @@ h3 {
 }
 @keyframes diskEnlarge { 
 	0% { transform: scale(1); } 
-	50% { transform: scale(1.4); } 
+	50% { transform: scale(1.6); } 
 	100% { transform: scale(1); } 
 }
 @keyframes diskEnlarge2 { 
 	0% { transform: scale(1); } 
-	50% { transform: scale(1.2); } 
+	50% { transform: scale(1.4); } 
 	100% { transform: scale(1); } 
 }
 .anim2 .disk {
