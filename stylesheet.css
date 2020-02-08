@@ -82,7 +82,7 @@ h3 {
 	text-transform: uppercase;	
 	letter-spacing:2px;
     color: #fff !important;
-	transition:all 0.2s ease-in-out;
+	transition:all 0.1s ease-in-out;
 }
 .navbar.scrolled .main-logo {
     margin: 15px;	
