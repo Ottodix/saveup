@@ -39,6 +39,7 @@ h3 {
 	padding: 10px 25px;
 	font-size:16px;	
 	transition: all 200ms linear;	
+    color: #fff;	
 	margin-bottom: 25px;
 }
 .btn:hover {
@@ -50,7 +51,6 @@ h3 {
 	background: rgb(168,215,0);
 	background: linear-gradient(90deg, #b0df0a 0%, #b0df0a 100%) !important;
 	border:2px solid rgba(168,215,0,1) !important;
-	color:#fff;
 }
 .icon-download {
 	background: url(img/icon-download.svg) no-repeat 0 100%;
@@ -255,14 +255,23 @@ h3 {
   }
 }
 
-
 #functions{
-	background:#19161d;
+	background:#19161d url(img/bg_functions.png) repeat-x 200% bottom;
 	color:#fff;	
 }
 #functions a {
 	color:#ec5e40;
 	font-style:italic;
+}
+#screenshot_slider{
+	text-align:center;
+	margin-top: 60px;
+}
+#screenshot_slider img{
+    vertical-align: middle;
+    margin: auto;
+    width: 100%;
+    max-width: 902px;
 }
 .title{
 	text-align:center;
@@ -326,6 +335,179 @@ h3 {
 }
 .sub-section.section3{
 	margin:50px 0;
+}
+.no-padding {
+	padding-left:0; padding-right:0
+}
+h3.visibility::before,h3.control::before,h3.simplicity::before {
+	content: "";
+	display:inline-block;
+	width:35px;
+	height:35px;	
+	background: url(img/visibility.svg) no-repeat 0 100%;
+    background-size: 100% 100%;	
+}
+h3.control::before {
+	background-image:url(img/control.svg);
+}
+h3.simplicity::before {
+	background-image:url(img/simplicity.svg);
+}
+#download-zone{
+	background: #ec5e40 url(img/bg_download_zone.png) repeat-x 0 100%;
+	text-align:center;
+	font: 22px/30px "Gotham Pro Light", Segoe UI;
+	padding:20px 15px;
+	color: #000;
+}
+#download-zone .col1 {
+	text-align:right;
+	padding-top:10px;
+}
+#download-zone .col2 {
+	text-align:left;
+}
+.store-btn {
+	display:inline-block;
+	width: 150px;
+	height:55px;
+	background-color:#19161d;
+	border-radius:8px;
+	padding:11px;
+	margin:0 10px;
+}
+.store-btn img{
+	width:100%;	
+}
+
+#testimonials .title h2{
+	line-height:5px;
+}
+#testimonials .arrow_left{
+	background:url(img/arrow_left.svg) no-repeat 100% 100%;
+	width:50px;
+	height:50px;
+	position:absolute;
+	top:calc(50% - 25px);
+	left:0;
+}
+#testimonials .arrow_right{
+	background:url(img/arrow_right.svg) no-repeat 100% 100%;
+	width:50px;
+	height:50px;
+	position:absolute;
+	top:calc(50% - 25px);
+	right:0;
+}
+.testimonial{
+	position:relative;
+}
+.testimonial .picture {
+	overflow: hidden;
+    margin-left: 50px;
+	text-align:center;
+}
+.testimonial .picture img{
+	border-radius:50%;
+	overflow: hidden;
+	box-shadow:3px 3px rgba(0,0,0,0.1);
+	display: inline;	
+}
+.testimonial .text {
+	font: 17px/25px Segoe UI Light;
+	position:relative;
+}
+.testimonial .text .quote_left {
+	background:url(img/quote_left.svg) no-repeat 100% 100%;
+
+	text-indent:-9999px;
+	position:absolute;
+	width:20px;
+	height:20px;
+	top:-10px;
+	left:-20px;
+}
+.testimonial .text .quote_right {
+	background:url(img/quote_right.svg) no-repeat 100% 100%;
+	background-position:0 5px;	
+	text-indent:-9999px;
+	display:inline-block;
+	width:20px;
+	height:20px;
+	margin-left: 15px;
+}
+.author {
+	font: bold 19px/30px Segoe UI Light;
+}
+.company{
+	font: bold italic 15px/30px Segoe UI Light;	
+}
+.references {
+	text-align:center;
+	margin:80px 0 40px;
+}
+.references img{
+	display:inline;
+	width:100%;
+	max-width:1101px;
+}
+#prices {
+	background-color:#ececec;
+}
+#prices .prices_container{
+	background:#fff;
+	border:1px solid #dedede;
+	border-top:5px solid #f27127;
+	box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+	margin-bottom:50px;
+}
+.price_col{
+	padding-bottom:10px;
+}
+.price_1::after,.price_2::after{
+    content: "";
+    width: 1px;
+    background: #ddd;
+    height: calc(100% - 60px);
+    position: absolute;
+    right: -1px;
+    top: 30px;
+}
+.price_col h3{
+	text-align:center;
+    font-size: 30px;
+	margin:30px 0 20px;
+}
+.price {
+	text-align:center;
+	color:#f27127;
+	font: normal 38px/30px Segoe UI Light;
+}
+.price span {
+	color:#000;
+	font: normal 22px/30px Segoe UI Light;	
+}
+.features {
+	list-style-type: none;
+	line-height: 30px;
+	margin:20px 0;
+	padding-left: 20px;
+}
+.features li{
+	background:url(img/checkmark.svg) no-repeat 0 50%;
+	padding-left:40px;	
+}
+.price_col .incentive{
+	margin: 30px 0;
+	padding-left: 20px;
+	font: normal 14px/20px Segoe UI Medium;
+}
+.center {
+	text-align:center;
+}
+#footer {
+	background:#19161d;
+	padding:40px;
 }
 @media screen and (max-width: 992px) {
 	.main-logo {
