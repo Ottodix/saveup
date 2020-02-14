@@ -411,6 +411,7 @@ h3.simplicity::before {
 	border-radius:50%;
 	overflow: hidden;
 	box-shadow:3px 3px rgba(0,0,0,0.1);
+    width: 85px;	
 	display: inline;	
 }
 .testimonial .text {
@@ -508,6 +509,33 @@ h3.simplicity::before {
 #footer {
 	background:#19161d;
 	padding:40px;
+}
+#footer .main-logo{
+    margin: 25px 0 0 -15px;
+    line-height: 29px;
+    font-size: 22px;
+    background-position: -20px 50%;
+    background-size: 60% 60%;
+}
+#footer ul{
+	list-style-type: none;
+	color:#fff;
+	font:14px/28px Segoe UI Light;
+	padding: 0;
+}
+#footer ul.contact li {
+	font:18px/34px Segoe UI Light;
+}
+#footer ul img{
+	margin-left:10px;
+}
+#footer .store-btns{
+	text-align: right;
+}
+#footer .store-btn{
+    background-color: #fff;
+	height: auto;
+	margin-bottom:15px;
 }
 @media screen and (max-width: 992px) {
 	.main-logo {
