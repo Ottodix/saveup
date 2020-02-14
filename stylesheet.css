@@ -93,9 +93,11 @@ h3 {
     margin: 15px;	
 }
 #top-section {
-	padding-top:120px;
 	background: rgb(45,23,62);
-	background: linear-gradient(180deg, rgba(45,23,62,1) 0%, rgba(236,93,62,1) 90%, rgba(89,24,38,1) 100%);
+	background: linear-gradient(180deg, rgba(45,23,62,1) 0%, rgba(161,78,99,1) 63%, rgba(224,106,83,1) 77%, rgba(236,93,62,1) 90%, rgba(89,24,38,1) 100%);
+}
+#top-section-bg {
+	padding-top:120px;
 	background-image: url(img/top_img_small.png), url(img/top_grad_small.png);
 	background-position: right bottom, 0 0;
 	background-repeat: no-repeat, repeat-x;	
