@@ -81,9 +81,7 @@ h3 {
     padding: 0 0 0 50px;
     margin: 25px;
     height: auto;
-	font-family: "Gotham Pro medium", Segoe UI;
-	font-size:35px;
-	line-height:30px;
+	font: 35px/30px "Gotham Pro medium", Segoe UI;
 	text-transform: uppercase;	
 	letter-spacing:2px;
     color: #fff !important;
@@ -216,36 +214,6 @@ h3 {
 }
 @keyframes circle { 
 	to { transform: rotate(1turn); } 
-}
-
-@keyframes smoothMove {
-  0% {
-    top:-32px;left:-35px;
-  }
-  12% {
-    top:-31px;left:-36px;
-  }  
-  24% {
-    top:-30px;left:-37px;
-  }
-  36% {
-    top:-29px;left:-36px;
-  }  
-  48% {
-    top:-28px;left:-35px;  
-  }
-  60% {
-    top:-29px;left:-34px;  
-  }  
-  72% {
-    top:-30px;left:-33px;  
-  }    
-  84% {
-    top:-31px;left:-34px;  
-  }      
-  96% {
-    top:-32px;left:-35px;  
-  }        
 }
 @keyframes upAndDown {
   0% {
