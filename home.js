@@ -11,14 +11,4 @@ $(function () {
 		if($(this).hasClass("collapsed")) $(".navbar-fixed-top").addClass('opennav');
 		else $(".navbar-fixed-top").removeClass('opennav');
 	});
-	$(".animation").click(function() {
-		if($(this).hasClass("anim1")) {
-			$(this).addClass("anim2");
-			$(this).removeClass("anim1");
-		}
-		else {
-			$(this).addClass("anim1");
-			$(this).removeClass("anim2")
-		}
-	});	
 });
