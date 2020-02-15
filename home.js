@@ -11,6 +11,9 @@ $(function () {
 		if($(this).hasClass("collapsed")) $(".navbar-fixed-top").addClass('opennav');
 		else $(".navbar-fixed-top").removeClass('opennav');
 	});
+	$(".navbar-fixed-top a").click(function() {
+		if($(this).parents(".navbar-fixed-top").hasClass('opennav')) $(".navbar-toggle").click();
+	});	
 });
 function scrollToDiv(id,offset){
 	$('html,body').unbind().animate({scrollTop: $("#"+id).offset().top-offset},'slow');
