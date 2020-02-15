@@ -288,6 +288,9 @@ h3 {
 	font-size:18px;
 	font-family: Segoe UI Light;	
 }
+.nomargin{
+	margin-top: 0;
+}
 .underscore::before,.underscore::after{
 	content: "";
 	display:inline-block;
@@ -358,7 +361,7 @@ h3.simplicity::before {
 	background-image:url(img/simplicity.svg);
 }
 #download-zone{
-	background: #ec5e40 url(img/bg_download_zone.png) repeat-x 0 100%;
+	background: #ec5e40 url(img/bg_download_zone.png) repeat 0 100%;
 	text-align:center;
 	font: 22px/30px "Gotham Pro Light", Segoe UI;
 	padding:20px 15px;
@@ -383,32 +386,30 @@ h3.simplicity::before {
 .store-btn img{
 	width:100%;	
 }
-
-#testimonials .title h2{
-	line-height:5px;
-}
 #testimonials .arrow_left{
-	background:url(img/arrow_left.svg) no-repeat 100% 100%;
+	background:#fff url(img/arrow_left.svg) no-repeat 100% 100%;
 	width:50px;
 	height:50px;
 	position:absolute;
+	background-size: 100% 100%;	
 	top:calc(50% - 25px);
 	left:0;
 }
 #testimonials .arrow_right{
-	background:url(img/arrow_right.svg) no-repeat 100% 100%;
+	background:#fff url(img/arrow_right.svg) no-repeat 100% 100%;
 	width:50px;
 	height:50px;
 	position:absolute;
 	top:calc(50% - 25px);
 	right:0;
 }
+
 .testimonial{
 	position:relative;
 }
 .testimonial .picture {
 	overflow: hidden;
-    margin-left: 50px;
+    margin: 0 30px 20px 60px;
 	text-align:center;
 }
 .testimonial .picture img{
@@ -541,9 +542,47 @@ h3.simplicity::before {
 	height: auto;
 	margin-bottom:15px;
 }
+@media screen and (max-width: 1200px) {
+	#testimonials .arrow_left{
+		width:40px;
+		height:40px;
+		position:absolute;
+		background-size: 100% 80%;	
+		background-position: 50% 50%;	
+		top:25px;
+		z-index:10;
+	}	
+	#testimonials .arrow_right{
+		width:40px;
+		height:40px;
+		position:absolute;
+		background-size: 100% 80%;	
+		background-position: 50% 50%;	
+		top:25px;
+		z-index:10;
+	}	
+	.testimonial .picture {
+		margin: 0 30px 20px;
+	}
+	.price_1::after, .price_2::after {
+		content: "";
+		height: 1px;
+		background: #ddd;
+		width: calc(100% - 60px);
+		position: absolute;
+		bottom: -1px;
+		top: auto;
+		right:30px;
+	}		
+	#footer .store-btns {
+		margin: 20px 15px;
+		padding: 15px 0;	
+	}	
+}
 @media screen and (max-width: 992px) {
 	.main-logo {
 		font-size: 20px;
+		margin: 15px;		
 	}
 	.nav>li>a {
 		font-size:14px;
@@ -564,6 +603,19 @@ h3.simplicity::before {
 	#top-section .top_screen {
 		margin-top: 0px;	
 	}	
+	#download-zone {
+		padding:10px 15px 5px;
+	}
+	#download-zone .col1, #download-zone .col2{
+		text-align:center;
+	}
+	#download-zone .col1{
+		margin-bottom:10px;
+		padding-top:0
+	}
+	#download-zone .store-btn{
+		margin-bottom:10px;
+	}
 	.sub-section {
 		margin : 30px 0;
 	}
@@ -582,6 +634,13 @@ h3.simplicity::before {
 	}
 	.underscore::after{
 		margin-left:10px;
+	}
+	#footer .store-btns {
+		text-align: center;
+	}	
+	.testimonial .text {
+		font: 17px/25px Segoe UI Light;
+		padding: 0 25px;
 	}	
 }
 @media screen and (max-width: 768px) {
