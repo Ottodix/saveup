@@ -162,12 +162,12 @@ h3 {
 }
 .animation .disk1, .animation .disk2, .animation .disk3, .animation .disk4 {
 	position:absolute;
-	background:rgba(255,255,255,0.04);
 	border-radius:100%;
 	transform-origin: 52% 52%; 
 	animation: diskEnlarge 2s infinite linear; 
 }
 .animation .disk1 {
+	background:rgba(255,255,255,0.04);	
 	z-index:1;	
 	width:90px;
 	height:90px;
@@ -401,11 +401,11 @@ h3.simplicity::before {
 .company{
 	font: bold italic 15px/30px Segoe UI Light;	
 }
-.references {
+#references {
 	text-align:center;
 	margin:80px 0 40px;
 }
-.references img{
+#references img{
 	display:inline;
 	width:100%;
 	max-width:1101px;
@@ -480,6 +480,9 @@ h3.simplicity::before {
 	color:#fff;
 	font:14px/28px Segoe UI Light;
 	padding: 0;
+}
+#footer ul a{
+	color:#fff;
 }
 #footer ul.contact li {
 	font:18px/34px Segoe UI Light;

@@ -12,3 +12,6 @@ $(function () {
 		else $(".navbar-fixed-top").removeClass('opennav');
 	});
 });
+function scrollToDiv(id,offset){
+	$('html,body').unbind().animate({scrollTop: $("#"+id).offset().top-offset},'slow');
+};	
