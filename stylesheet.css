@@ -634,6 +634,13 @@ h3.simplicity::before {
 		font: 17px/25px Segoe UI Light;
 		padding: 0 25px;
 	}	
+	#prices .container,
+	#testimonials .container,
+	#functions .container,
+	#top-section .container{
+		padding-right: 25px;
+		padding-left: 25px;
+	}
 }
 @media screen and (max-width: 768px) {
 	.nav>li.btn-download-top>a {
