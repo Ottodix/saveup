@@ -9,11 +9,15 @@ $(function () {
 		if($(this).scrollTop() > $nav.height()*2) $nav.addClass('scrolled');
 		showScrollTop();
 	});  
+	$(".navbar-nav a").click(function(e) {
+		e.preventDefault();		
+	});		
 	$(".navbar-toggle").click(function() {
 		if($(this).hasClass("collapsed")) $(".navbar-fixed-top").addClass('opennav');
 		else $(".navbar-fixed-top").removeClass('opennav');
 	});
-	$(".navbar-fixed-top a").click(function() {
+	$(".navbar-fixed-top a").click(function(e) {
+		e.preventDefault();		
 		if($(this).parents(".navbar-fixed-top").hasClass('opennav')) $(".navbar-toggle").click();
 	});	
 	$(".scrollTopBtn").click(function() {
