@@ -170,7 +170,8 @@ h3 {
     left: 9px;
     top: 5px;
 	position: absolute;	
-	animation: upAndDown 1s infinite ease-in-out;
+	transform:translateY(0);
+	animation: upAndDown 1.5s infinite ease-in-out;
 }
 .animation .disk1, .animation .disk2, .animation .disk3, .animation .disk4 {
 	position:absolute;
@@ -216,13 +217,13 @@ h3 {
 
 @keyframes upAndDown {
   0% {
-    top: 3px;
+    transform:translateY(-3px);
   }
   50% {
-    top: 10px;
+    transform:translateY(4px);
   }
   100% {
-    top: 3px;	  
+    transform:translateY(-3px);  
   }
 }
 
